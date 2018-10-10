@@ -41,7 +41,7 @@ class App extends Component {
         }
         {showAnswer &&
           <div>
-            {getResult()}
+            {getResult(this.input.value)}
             <input type="button" onClick={this.toggleShowAnswer} ref={(back) => {this.back = back;}} value="Back"/>
           </div>
         }
